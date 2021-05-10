@@ -38,6 +38,34 @@ func C()  {
 ![avatar](./tupian/img_1.png)
 ![avatar](./tupian/img_2.png)
 
+### 4.调试说明
+
+```
+go build -gcflags "-N -l" .   //禁止编译器优化，因为优化的汇编几乎不可读
+```
+```
+gdb -tui main                 //用tui更加方便汇编调试
+```
+```
+
+layout asm   //显示汇编
+
+b main.main  //在主函数断点
+
+next         // 单补执行
+
+ni           // 单独执行一条汇编
+
+step         // 进入函数
+
+info registers //显示寄存器
+
+```
+
+
+
+
+
 
 
 
