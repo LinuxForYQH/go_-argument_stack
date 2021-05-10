@@ -44,7 +44,7 @@ func C()  {
 go build -gcflags "-N -l" .   //禁止编译器优化，因为优化的汇编几乎不可读
 ```
 ```
-gdb -tui main                 //用tui更加方便汇编调试
+gdb -tui go_-argument_stack                 //用tui更加方便汇编调试
 ```
 ```
 
